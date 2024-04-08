@@ -1,0 +1,19 @@
+[0.666s] Invoking command in '/home/robox/Simulation/build/rbs_simulation': PYTHONPATH=/home/robox/Simulation/build/rbs_simulation/prefix_override:/home/robox/Simulation/install/rbs_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/robox/Simulation/build/rbs_simulation/build --no-deps symlink_data --force
+[0.967s] running develop
+[1.134s] running egg_info
+[1.134s] writing rbs_simulation.egg-info/PKG-INFO
+[1.135s] writing dependency_links to rbs_simulation.egg-info/dependency_links.txt
+[1.135s] writing entry points to rbs_simulation.egg-info/entry_points.txt
+[1.135s] writing requirements to rbs_simulation.egg-info/requires.txt
+[1.135s] writing top-level names to rbs_simulation.egg-info/top_level.txt
+[1.137s] reading manifest file 'rbs_simulation.egg-info/SOURCES.txt'
+[1.138s] writing manifest file 'rbs_simulation.egg-info/SOURCES.txt'
+[1.139s] running build_ext
+[1.140s] Creating /home/robox/Simulation/install/rbs_simulation/lib/python3.10/site-packages/rbs-simulation.egg-link (link to .)
+[1.141s] Installing test_node script to /home/robox/Simulation/install/rbs_simulation/lib/rbs_simulation
+[1.141s] 
+[1.141s] Installed /home/robox/Simulation/build/rbs_simulation
+[1.141s] running symlink_data
+[1.141s] symbolically linking /home/robox/Simulation/build/rbs_simulation/resource/rbs_simulation -> /home/robox/Simulation/install/rbs_simulation/share/ament_index/resource_index/packages
+[1.141s] symbolically linking /home/robox/Simulation/build/rbs_simulation/package.xml -> /home/robox/Simulation/install/rbs_simulation/share/rbs_simulation
+[1.175s] Invoked command in '/home/robox/Simulation/build/rbs_simulation' returned '0': PYTHONPATH=/home/robox/Simulation/build/rbs_simulation/prefix_override:/home/robox/Simulation/install/rbs_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/robox/Simulation/build/rbs_simulation/build --no-deps symlink_data --force

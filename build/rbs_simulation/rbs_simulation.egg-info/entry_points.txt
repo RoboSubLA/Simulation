@@ -1,0 +1,3 @@
+[console_scripts]
+test_node = rbs_simulation.camera_node:main
+

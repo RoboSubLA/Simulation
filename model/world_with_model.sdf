@@ -1,0 +1,84 @@
+<sdf version='1.9'>
+  <world name='default'>
+    <!-- World properties -->
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>5.5645e-6 22.8758e-6 -42.3884e-6</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    
+    <!-- Model definition -->
+    <model name="my_model">
+      <pose>10 0 0 0 0 0</pose>
+      <static>true</static>
+      
+      <!-- Link definition -->
+      <link name="visual">
+        <!-- Visual representation -->
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>model://Shell_UAV.STL</uri>
+            </mesh>
+          </geometry>
+          <!-- Material properties for the UAV -->
+          <material>
+            <ambient>0 0 0 1</ambient>
+            <diffuse>0 0 0 1</diffuse>
+            <specular>0.5 0.5 0.5 1</specular>
+          </material>
+        </visual>
+        <!-- Collision representation -->
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>model://Shell_UAV.STL</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        
+        <!-- Plane visual -->
+        <visual name="plane_visual">
+          <geometry>
+            <plane>
+              <size>5000 5000</size> <!-- Adjust the size here -->
+            </plane>
+          </geometry>
+          <!-- Material properties for the plane -->
+          <material>
+            <ambient>0.7 0.7 1 1</ambient> <!-- Light blue ambient color (RGB + Alpha) -->
+            <diffuse>0.7 0.7 1 1</diffuse> <!-- Light blue diffuse color (RGB + Alpha) -->
+            <specular>0.5 0.5 0.5 1</specular> <!-- Specular color (RGB + Alpha) -->
+          </material>
+        </visual>
+        
+        <!-- Define camera sensor -->
+        <sensor name="my_camera" type="camera">
+          <pose>0 0 0 0 0 0</pose> <!-- Position and orientation relative to link -->
+          <camera>
+            <!-- Camera parameters -->
+          </camera>
+          <plugin name="camera_controller" filename="libignition-gazebo-camera-system.so">
+            <topic>/camera/image</topic> <!-- Topic where camera publishes image data -->
+          </plugin>
+        </sensor>
+        
+      </link>
+      
+      <!-- Scale of the model -->
+      <scale>0.1 0.1 0.1</scale>
+      
+    </model>
+    
+    <!-- Scene properties -->
+    <scene>
+      <ambient>0.4 0.4 0.4 1.0</ambient>
+      <background>0 0.5 0.5 1</background>
+      <shadows>true</shadows>
+    </scene>
+    
+  </world>
+</sdf>

@@ -1,6 +1,11 @@
 <?xml version="1.0"?>
 <sdf version='1.9'>
   <world name='new_world'>
+    <scene>
+      <!-- For turquoise ambient to match particle effect -->
+      <ambient>0.0 1.0 1.0</ambient>
+      <background>0.0 0.7 0.8</background>
+    </scene>
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>5.5645e-6 22.8758e-6 -42.3884e-6</magnetic_field>
     <atmosphere type='adiabatic' />
@@ -21,6 +26,23 @@
       filename="libignition-gazebo-scene-broadcaster-system.so"
       name="ignition::gazebo::systems::SceneBroadcaster">
     </plugin>
+
+    <plugin
+    filename="ignition-gazebo-contact-system"
+    name="ignition::gazebo::systems::Contact">
+  </plugin>
+
+      <plugin
+      filename="ignition-gazebo-particle-emitter2-system"
+      name="ignition::gazebo::systems::ParticleEmitter2">
+    </plugin>
+
+  <plugin
+    filename="ignition-gazebo-buoyancy-system"
+    name="ignition::gazebo::systems::Buoyancy">
+    <uniform_fluid_density>1000</uniform_fluid_density>
+  </plugin>
+
     <gui fullscreen="0">
       <!-- 3D scene -->
       <plugin filename="GzScene3D" name="3D View">
@@ -129,6 +151,8 @@
       <!-- Entity tree -->
       <plugin filename="EntityTree" name="Entity tree">
 </plugin>
+
+
 
       <!-- Image Display Plugins for visualization -->
       <plugin filename="ImageDisplay" name="Image Display">
@@ -309,16 +333,33 @@
       <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
         <label>20</label>
       </plugin>
+      <!-- add Hydrodynamics to object -->
+      <plugin
+        filename="ignition-gazebo-hydrodynamics-system"
+        name="ignition::gazebo::systems::Hydrodynamics">
+        <link_name>base_link</link_name>
+        <xDotU>-4.876161</xDotU>
+        <yDotV>-126.324739</yDotV>
+        <zDotW>-126.324739</zDotW>
+        <kDotP>0</kDotP>
+        <mDotQ>-33.46</mDotQ>
+        <nDotR>-33.46</nDotR>
+        <xUU>-6.2282</xUU>
+        <xU>0</xU>
+        <yVV>-601.27</yVV>
+        <yV>0</yV>
+        <zWW>-601.27</zWW>
+        <zW>0</zW>
+        <kPP>-0.1916</kPP>
+        <kP>0</kP>
+        <mQQ>-632.698957</mQQ>
+        <mQ>0</mQ>
+        <nRR>-632.698957</nRR>
+        <nR>0</nR>
+      </plugin>
+
     </model>
 
-    <include>
-      <pose>-1 0 3 0.0 0.0 1.57</pose>
-      <uri>
-      https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Construction Cone
-      </uri>
-      <plugin filename="ignition-gazebo-label-system" name="ignition::gazebo::systems::Label">
-        <label>40</label>
-      </plugin>
-    </include>
+
   </world>
 </sdf>

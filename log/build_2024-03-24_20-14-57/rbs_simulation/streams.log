@@ -1,0 +1,24 @@
+[0.671s] Invoking command in '/home/robox/Simulation/rbs_simulation': PYTHONPATH=/home/robox/Simulation/build/rbs_simulation/prefix_override:/home/robox/Simulation/install/rbs_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/rbs_simulation build --build-base /home/robox/Simulation/build/rbs_simulation/build install --record /home/robox/Simulation/build/rbs_simulation/install.log --single-version-externally-managed install_data
+[0.914s] running egg_info
+[0.915s] writing ../build/rbs_simulation/rbs_simulation.egg-info/PKG-INFO
+[0.915s] writing dependency_links to ../build/rbs_simulation/rbs_simulation.egg-info/dependency_links.txt
+[0.915s] writing entry points to ../build/rbs_simulation/rbs_simulation.egg-info/entry_points.txt
+[0.915s] writing requirements to ../build/rbs_simulation/rbs_simulation.egg-info/requires.txt
+[0.915s] writing top-level names to ../build/rbs_simulation/rbs_simulation.egg-info/top_level.txt
+[0.918s] reading manifest file '../build/rbs_simulation/rbs_simulation.egg-info/SOURCES.txt'
+[0.919s] writing manifest file '../build/rbs_simulation/rbs_simulation.egg-info/SOURCES.txt'
+[0.919s] running build
+[0.919s] running build_py
+[0.919s] copying rbs_simulation/camera_node.py -> /home/robox/Simulation/build/rbs_simulation/build/lib/rbs_simulation
+[0.920s] running install
+[0.920s] running install_lib
+[0.921s] copying /home/robox/Simulation/build/rbs_simulation/build/lib/rbs_simulation/camera_node.py -> /home/robox/Simulation/install/rbs_simulation/lib/python3.10/site-packages/rbs_simulation
+[0.921s] byte-compiling /home/robox/Simulation/install/rbs_simulation/lib/python3.10/site-packages/rbs_simulation/camera_node.py to camera_node.cpython-310.pyc
+[0.922s] running install_data
+[0.922s] running install_egg_info
+[0.924s] removing '/home/robox/Simulation/install/rbs_simulation/lib/python3.10/site-packages/rbs_simulation-0.0.0-py3.10.egg-info' (and everything under it)
+[0.924s] Copying ../build/rbs_simulation/rbs_simulation.egg-info to /home/robox/Simulation/install/rbs_simulation/lib/python3.10/site-packages/rbs_simulation-0.0.0-py3.10.egg-info
+[0.925s] running install_scripts
+[0.944s] Installing test_node script to /home/robox/Simulation/install/rbs_simulation/lib/rbs_simulation
+[0.944s] writing list of installed files to '/home/robox/Simulation/build/rbs_simulation/install.log'
+[0.973s] Invoked command in '/home/robox/Simulation/rbs_simulation' returned '0': PYTHONPATH=/home/robox/Simulation/build/rbs_simulation/prefix_override:/home/robox/Simulation/install/rbs_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/rbs_simulation build --build-base /home/robox/Simulation/build/rbs_simulation/build install --record /home/robox/Simulation/build/rbs_simulation/install.log --single-version-externally-managed install_data

@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../build/rbs_simulation/rbs_simulation.egg-info/PKG-INFO
+../build/rbs_simulation/rbs_simulation.egg-info/SOURCES.txt
+../build/rbs_simulation/rbs_simulation.egg-info/dependency_links.txt
+../build/rbs_simulation/rbs_simulation.egg-info/entry_points.txt
+../build/rbs_simulation/rbs_simulation.egg-info/requires.txt
+../build/rbs_simulation/rbs_simulation.egg-info/top_level.txt
+../build/rbs_simulation/rbs_simulation.egg-info/zip-safe
+rbs_simulation/__init__.py
+rbs_simulation/camera_node.py
+resource/rbs_simulation
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

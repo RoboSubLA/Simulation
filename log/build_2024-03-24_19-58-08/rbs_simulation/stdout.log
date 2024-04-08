@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing rbs_simulation.egg-info/PKG-INFO
+writing dependency_links to rbs_simulation.egg-info/dependency_links.txt
+writing entry points to rbs_simulation.egg-info/entry_points.txt
+writing requirements to rbs_simulation.egg-info/requires.txt
+writing top-level names to rbs_simulation.egg-info/top_level.txt
+reading manifest file 'rbs_simulation.egg-info/SOURCES.txt'
+writing manifest file 'rbs_simulation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/robox/Simulation/install/rbs_simulation/lib/python3.10/site-packages/rbs-simulation.egg-link (link to .)
+Installing test_node script to /home/robox/Simulation/install/rbs_simulation/lib/rbs_simulation
+
+Installed /home/robox/Simulation/build/rbs_simulation
+running symlink_data
+symbolically linking /home/robox/Simulation/build/rbs_simulation/resource/rbs_simulation -> /home/robox/Simulation/install/rbs_simulation/share/ament_index/resource_index/packages
+symbolically linking /home/robox/Simulation/build/rbs_simulation/package.xml -> /home/robox/Simulation/install/rbs_simulation/share/rbs_simulation

@@ -1,0 +1,31 @@
+running egg_info
+creating ../build/rbs_simulation/rbs_simulation.egg-info
+writing ../build/rbs_simulation/rbs_simulation.egg-info/PKG-INFO
+writing dependency_links to ../build/rbs_simulation/rbs_simulation.egg-info/dependency_links.txt
+writing entry points to ../build/rbs_simulation/rbs_simulation.egg-info/entry_points.txt
+writing requirements to ../build/rbs_simulation/rbs_simulation.egg-info/requires.txt
+writing top-level names to ../build/rbs_simulation/rbs_simulation.egg-info/top_level.txt
+writing manifest file '../build/rbs_simulation/rbs_simulation.egg-info/SOURCES.txt'
+reading manifest file '../build/rbs_simulation/rbs_simulation.egg-info/SOURCES.txt'
+writing manifest file '../build/rbs_simulation/rbs_simulation.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/robox/Simulation/build/rbs_simulation/build
+creating /home/robox/Simulation/build/rbs_simulation/build/lib
+creating /home/robox/Simulation/build/rbs_simulation/build/lib/rbs_simulation
+copying rbs_simulation/__init__.py -> /home/robox/Simulation/build/rbs_simulation/build/lib/rbs_simulation
+running install
+running install_lib
+creating /home/robox/Simulation/install/rbs_simulation/lib/python3.10/site-packages/rbs_simulation
+copying /home/robox/Simulation/build/rbs_simulation/build/lib/rbs_simulation/__init__.py -> /home/robox/Simulation/install/rbs_simulation/lib/python3.10/site-packages/rbs_simulation
+byte-compiling /home/robox/Simulation/install/rbs_simulation/lib/python3.10/site-packages/rbs_simulation/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/robox/Simulation/install/rbs_simulation/share/ament_index
+creating /home/robox/Simulation/install/rbs_simulation/share/ament_index/resource_index
+creating /home/robox/Simulation/install/rbs_simulation/share/ament_index/resource_index/packages
+copying resource/rbs_simulation -> /home/robox/Simulation/install/rbs_simulation/share/ament_index/resource_index/packages
+copying package.xml -> /home/robox/Simulation/install/rbs_simulation/share/rbs_simulation
+running install_egg_info
+Copying ../build/rbs_simulation/rbs_simulation.egg-info to /home/robox/Simulation/install/rbs_simulation/lib/python3.10/site-packages/rbs_simulation-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/robox/Simulation/build/rbs_simulation/install.log'
